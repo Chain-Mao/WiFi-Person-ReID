@@ -12,7 +12,7 @@ Our paper are available at [here](https://arxiv.org/abs/2406.01906).
 Person re-identification (ReID), as a crucial technology in the field of security, plays an important role in security detection and people counting. Current security and monitoring systems largely rely on visual information, which may infringe on personal privacy and be susceptible to interference from pedestrian appearances and clothing in certain scenarios. Meanwhile, the widespread use of routers offers new possibilities for ReID. 
 
 <div align="center"><img src="wifi_arch.png"  width="80%"/></div>
-<div align="center"><img src="csi_uniform.png  width="80%"/></div>
+<div align="center"><img src="csi_uniform.png"  width="80%"/></div>
 
 This letter introduces a method using WiFi Channel State Information (CSI), leveraging the multipath propagation characteristics of WiFi signals as a basis for distinguishing different pedestrian features. We propose a two-stream network structure capable of processing variable-length data, which analyzes the amplitude in the time domain and the phase in the frequency domain of WiFi signals, fuses time-frequency information through continuous lateral connections, and employs advanced objective functions for representation and metric learning. Tested on a dataset collected in the real world, our method achieves 93.68% mAP and 98.13% Rank-1.
 
