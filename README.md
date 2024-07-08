@@ -7,8 +7,6 @@ Our paper are available at [here](https://arxiv.org/abs/2406.01906).
 
 <div align="center"><img src="wifi_scene.png"  width="60%"/></div>
 
-Parts of this repo are inspired by [fast-reid](https://github.com/JDAI-CV/fast-reid)
-
 ## Introduction
 
 Person re-identification (ReID), as a crucial technology in the field of security, plays an important role in security detection and people counting. Current security and monitoring systems largely rely on visual information, which may infringe on personal privacy and be susceptible to interference from pedestrian appearances and clothing in certain scenarios. Meanwhile, the widespread use of routers offers new possibilities for ReID. 
@@ -37,3 +35,5 @@ archivePrefix = {arXiv},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
+
+Parts of this repo are inspired by [fast-reid](https://github.com/JDAI-CV/fast-reid)
