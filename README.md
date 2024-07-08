@@ -36,4 +36,4 @@ archivePrefix = {arXiv},
 }
 ```
 
-Parts of this repo are inspired by [fast-reid](https://github.com/JDAI-CV/fast-reid)
+Parts of this repo are inspired by [fast-reid](https://github.com/JDAI-CV/fast-reid).
