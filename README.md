@@ -1,32 +1,17 @@
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progeo-generating-prompts-through-image-text/visual-place-recognition-on-msls)](https://paperswithcode.com/sota/visual-place-recognition-on-msls?p=progeo-generating-prompts-through-image-text)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progeo-generating-prompts-through-image-text/visual-place-recognition-on-pittsburgh-30k)](https://paperswithcode.com/sota/visual-place-recognition-on-pittsburgh-30k?p=progeo-generating-prompts-through-image-text)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progeo-generating-prompts-through-image-text/visual-place-recognition-on-sf-xl-test-v1)](https://paperswithcode.com/sota/visual-place-recognition-on-sf-xl-test-v1?p=progeo-generating-prompts-through-image-text)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progeo-generating-prompts-through-image-text/visual-place-recognition-on-sf-xl-test-v2)](https://paperswithcode.com/sota/visual-place-recognition-on-sf-xl-test-v2?p=progeo-generating-prompts-through-image-text)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progeo-generating-prompts-through-image-text/visual-place-recognition-on-st-lucia)](https://paperswithcode.com/sota/visual-place-recognition-on-st-lucia?p=progeo-generating-prompts-through-image-text)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progeo-generating-prompts-through-image-text/visual-place-recognition-on-tokyo247)](https://paperswithcode.com/sota/visual-place-recognition-on-tokyo247?p=progeo-generating-prompts-through-image-text)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/progeo-generating-prompts-through-image-text/visual-place-recognition-on-pittsburgh-250k)](https://paperswithcode.com/sota/visual-place-recognition-on-pittsburgh-250k?p=progeo-generating-prompts-through-image-text)
+# WiFi-Person-ReID
 
-# ProGEO
+<b>Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification</b>
 
-<b>ProGEO: Generating Prompts through Image-Text Contrastive Learning For Visual Geo-localization</b>
-
-This repository contains the official python implementation for our paper at ICANN 2024 "ProGEO: Generating Prompts through Image-Text Contrastive Learning For Visual Geo-localization, Chen Mao, Jingqi Hu et al". 
+This repository contains the official python implementation for our paper "Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification, Chen Mao". 
 Our paper are available at [here](https://arxiv.org/abs/2406.01906).
 
 ## Introduction
 
-Visual Geo-localization (VG) refers to the process to identify the location described in query images, which is widely applied in robotics field and computer vision tasks, such as autonomous driving, metaverse, augmented reality, and SLAM. In fine-grained images lacking specific text descriptions, directly applying pure visual methods to represent neighborhood features often leads to the model focusing on overly fine-grained features, unable to fully mine the semantic information in the images. Therefore, we propose a two-stage training method to enhance visual performance and use contrastive learning to mine challenging samples. 
+Person re-identification (ReID), as a crucial technology in the field of security, plays an important role in security detection and people counting. Current security and monitoring systems largely rely on visual information, which may infringe on personal privacy and be susceptible to interference from pedestrian appearances and clothing in certain scenarios. Meanwhile, the widespread use of routers offers new possibilities for ReID. This letter introduces a method using WiFi Channel State Information (CSI), leveraging the multipath propagation characteristics of WiFi signals as a basis for distinguishing different pedestrian features. We propose a two-stream network structure capable of processing variable-length data, which analyzes the amplitude in the time domain and the phase in the frequency domain of WiFi signals, fuses time-frequency information through continuous lateral connections, and employs advanced objective functions for representation and metric learning. Tested on a dataset collected in the real world, our method achieves 93.68% mAP and 98.13% Rank-1.
 
 <img align="center" width="80%" src="https://github.com/Chain-Mao/ProGEO/blob/main/all.png">
 
 We first leverage the multi-modal description capability of CLIP (Contrastive Language-Image Pretraining) to create a set of learnable text prompts for each geographic image feature to form vague descriptions. Then, by utilizing dynamic text prompts to assist the training of the image encoder, we enable the image encoder to learn better and more generalizable visual features. This strategy of applying text to purely visual tasks addresses the challenge of using multi-modal models for geographic images, which often suffer from a lack of precise descriptions, making them difficult to utilize widely. We validate the effectiveness of the proposed strategy on several large-scale visual geo-localization datasets, and our method achieves competitive results on multiple visual geo-localization datasets.
-
-## Dateset
-
-Firstly, you can download the dataset called San Francisco eXtra Large (SF-XL, go [_here_](https://forms.gle/wpyDzhDyoWLQygAT9)).
-The SF-XL dataset is about 1 TB.
-For training only a subset of the images is used, and you can use this subset for training, which is only 360 GB.
-More information on the dataset and lightweight version that you can find on the dataset download page (go [_here_](https://forms.gle/wpyDzhDyoWLQygAT9)).
 
 ## Train
 
@@ -64,26 +49,12 @@ You can test a trained model as such
 
 <img align="center" width="80%" src="https://github.com/Chain-Mao/ProGEO/blob/main/visual.png">
 
-## Model Zoo
-
-You can download the trained models from the table below, which provides links to models with different visual backbones and dimensionality of descriptors, trained on SF-XL.
-
-| Visual Model | Dimension | Link | Password |
-|----------|------|------|--------|
-| CLIP-ResNet50  | 1024 | [https://pan.baidu.com/s/1X9iGoVRy_Fc0HwTSUvclVQ](https://pan.baidu.com/s/1X9iGoVRy_Fc0HwTSUvclVQ) | fw3t |
-| CLIP-ResNet101 | 512 | [https://pan.baidu.com/s/1U8MYcFeRZfLz8r5Xx30eFg](https://pan.baidu.com/s/1U8MYcFeRZfLz8r5Xx30eFg) | gh6z |
-| CLIP-ViT-B-16  | 512 | [https://pan.baidu.com/s/1O82EYD-0WmHC6Wx-a5B_0g](https://pan.baidu.com/s/1O82EYD-0WmHC6Wx-a5B_0g) | vzho |
-| CLIP-ViT-B-32  | 512 | [https://pan.baidu.com/s/19vJv4OE31XSCYIIZ2X1qSQ](https://pan.baidu.com/s/19vJv4OE31XSCYIIZ2X1qSQ) | x0xb |
-
-
 ## Issues
 If you have any questions regarding our code or model, feel free to open an issue or send an email to maochen981203@gmail.com
 
 ## Acknowledgements
 Parts of this repo are inspired by the following repositories:
-- [CoOp in PyTorch](https://github.com/KaiyangZhou/CoOp)
-- [Cosplace in PyTorch](https://github.com/gmberton/CosPlace)
-- [Visual Geo-localization benchmark](https://github.com/gmberton/deep-visual-geo-localization-benchmark)
+- [fast-reid](https://github.com/JDAI-CV/fast-reid)
 
 ## Cite
 Here is the bibtex to cite our arxiv paper, the Springer version will be cited after official publication.
