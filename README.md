@@ -3,7 +3,7 @@
 <b>Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification</b>
 
 This repository contains the official python implementation for our paper "Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification, Chen Mao". 
-Our paper are available at [here](https://arxiv.org/abs/2406.01906).
+Our paper are available at [here](https://arxiv.org/abs/2407.09045).
 
 <div align="center"><img src="wifi_scene.png"  width="60%"/></div>
 
@@ -19,21 +19,14 @@ This letter introduces a method using WiFi Channel State Information (CSI), leve
 ## Cite
 Here is the bibtex to cite our arxiv paper, the Springer version will be cited after official publication.
 ```
-@ARTICLE{2024arXiv240601906M,
-       author = {{Mao}, Chen and {Hu}, Jingqi},
-        title = "{ProGEO: Generating Prompts through Image-Text Contrastive Learning for Visual Geo-localization}",
-      journal = {arXiv e-prints},
-     keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Information Retrieval},
-         year = 2024,
-        month = jun,
-          eid = {arXiv:2406.01906},
-        pages = {arXiv:2406.01906},
-          doi = {10.48550/arXiv.2406.01906},
-archivePrefix = {arXiv},
-       eprint = {2406.01906},
- primaryClass = {cs.CV},
-       adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240601906M},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+@misc{mao2024timefrequencyanalysisvariablelengthwifi,
+      title={Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification}, 
+      author={Chen Mao and Chong Tan and Jingqi Hu and Min Zheng},
+      year={2024},
+      eprint={2407.09045},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2407.09045}, 
 }
 ```
 
