@@ -3,7 +3,7 @@
 <b>Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification</b>
 
 This repository contains the official python implementation for our paper "Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification, Chen Mao". 
-Our paper are available at [here](https://arxiv.org/abs/2407.09045).
+Our paper was accepted by Ieee Signal Processing Letters, the paper is available at [here](https://arxiv.org/abs/2407.09045).
 
 <div align="center"><img src="wifi_scene.png"  width="60%"/></div>
 
